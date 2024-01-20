@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn-sm {
+    @apply px-4 py-2 bg-dark-950 hover:bg-dark-900 text-primary border-2 border-primary ease-in duration-100 rounded-sm font-bold;
+}
+
+.btn-lg {
+    @apply px-6 py-3 bg-dark-950 hover:bg-dark-900 text-primary border-2 border-primary ease-in duration-100 rounded-sm font-bold;
+}
+
+.titular {
+    @apply text-center font-bold text-4xl lg:text-6xl;
+}
+
+.card {
+    @apply border-2 border-dark-800 bg-dark-950 p-8  flex-col justify-start items-start gap-2.5 flex rounded-lg;
+}
+
+.card-row {
+    @apply border-2 border-dark-800 bg-dark-950 px-8 pb-8 pt-6 flex justify-between items-center gap-10 lg:gap-24 rounded-lg;
+}
+
+.texto-xl {
+    @apply self-stretch text-slate-50 text-base font-bold lg:text-xl;
+}
+
+.texto-xl-2 {
+    @apply self-stretch  text-base font-bold lg:text-xl;
+}
+
+.texto-xxl {
+    @apply self-stretch text-2xl font-bold lg:text-3xl;
+}
+
+.text-clay {
+    @apply text-gray-300 text-base;
+}
