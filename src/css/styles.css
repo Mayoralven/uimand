@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  
+  background-color: #020202;
+}
+
+
+#hero {
+  background-image: url(../../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: bottom center;  
+}
+
+.navbar {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(46, 46, 46, 0.1);
+  border: 1px solid rgba(255,255,255,.05);
+  z-index: 9;
+}
+
+
+.particles {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 8;
+}
+
+.grain {
+  z-index: 5;
+  opacity: .03;
+  mix-blend-mode: normal;
+  background-image: url(../../img/grain.gif);
+  background-position: 50% 0;
+  background-size: auto;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+
+.menu {
+  z-index: 100;
+  padding-bottom: 30px;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.menu-container {
+  max-width: 550px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(70, 70, 70, 0.1);
+  border: 1px solid rgba(255,255,255,.05);
+  border-radius: 19px;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+}
+
+
+
+
+.menu-link {
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 0;
+  padding: 5px 18px;
+  font-size: 14px;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.menu-link:hover, .menu-link.login:hover, .menu-link.w--current {
+  color: #fff;
+  background-color: rgba(255,255,255,.06);
+}
+
+.menu-link.login {
+    border: 1px solid #00E594;    
+    color: #fff;
+    background-color: rgba(255,255,255,0);
+    border-radius: 10px;
+    margin-right: 0;
+}
+
+
+.text-span {
+  color: #a9ffe1;
+  background-image: url(../../img/bg-text-1.svg);
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+  margin-bottom: -20px;
+  margin-right: -5px;
+  padding: 38px 10px 20px 25px;
+  display: inline-block;
+}
+
+.text-span-2 {
+  color: #a9ffe1;
+  background-image: url(../../img/bg-text-2.svg);
+  background-position: 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+  margin-bottom: -20px;
+  margin-right: -20px;
+  margin-left: -5px;
+  padding: 38px 30px 21px 16px;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  
+#hero {
+  background-image: url(../../img/hero-bg-mob.jpg);
+  background-size: cover;
+  background-position: center center;  
+}
+
+.text-span {
+  padding: 38px 10px 20px 24px;
+}
+
+.text-span-2 {
+  align-self: stretch;
+  background-image: url(../../img/bg-text-2-mob.svg);
+  padding: 34px 24px 15px 10px;
+}
+
+}
