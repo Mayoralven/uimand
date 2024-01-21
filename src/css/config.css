@@ -19,8 +19,12 @@
     @apply border-2 border-dark-800 bg-dark-950 p-8  flex-col justify-start items-start gap-2.5 flex rounded-lg;
 }
 
+.card-center {
+    @apply w-full lg:w-1/2 self-stretch border-2 border-dark-800 bg-dark-950 p-8  flex-col justify-start items-start gap-2.5 flex rounded-lg;
+}
+
 .card-row {
-    @apply border-2 border-dark-800 bg-dark-950 px-8 pb-8 pt-6 flex justify-between items-center gap-10 lg:gap-24 rounded-lg;
+    @apply flex flex-col-reverse w-full md:w-2/3 lg:w-1/2 md:flex-row border-2 border-dark-800 bg-dark-950 px-8 pb-8 pt-6  justify-between items-start lg:items-center gap-5 lg:gap-24 rounded-lg;
 }
 
 .texto-xl {
@@ -35,6 +39,26 @@
     @apply self-stretch text-2xl font-bold lg:text-3xl;
 }
 
+.project-title {
+    @apply text-primary self-stretch text-xl font-bold lg:text-2xl;
+}
+
 .text-clay {
     @apply text-gray-300 text-base;
+}
+
+.badge-sm {
+    @apply text-sm text-dark-50 border-2 px-3 py-1 rounded-full border-dark-800 bg-dark-900;
+}
+
+.prices-included {
+    @apply flex flex-col gap-2 self-stretch pt-4;
+}
+
+.prices-li {
+    @apply flex items-center gap-2;
+}
+
+.cover-project {
+    @apply flex rounded-lg lg:grayscale lg:hover:grayscale-0 duration-150 lg:hover:scale-105;
 }
