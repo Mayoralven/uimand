@@ -7,22 +7,6 @@ body {
   background-color: #020202;
 }
 
-
-#hero {
-  background-image: url(../../img/hero-bg.jpg);
-  background-size: cover;
-  background-position: bottom center;  
-}
-
-.navbar {
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  background-color: rgba(46, 46, 46, 0.1);
-  border: 1px solid rgba(255,255,255,.05);
-  z-index: 9;
-}
-
-
 .particles {
   position: absolute;
   top: 0%;
@@ -46,6 +30,36 @@ body {
   right: 0%;
 }
 
+
+#hero {
+  background-image: url(../../img/hero-bg.webp);
+  background-size: cover;
+  background-position: bottom center;  
+}
+
+.navbar {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(46, 46, 46, 0.1);
+  border: 1px solid rgba(255,255,255,.05);
+  z-index: 9;
+}
+
+
+.bg-card {
+  background-image: url(../../img/card-bg.webp);
+  background-size: cover;
+}
+
+.bg-card-2 {
+  background-image: url(../../img/card-bg-2.webp);
+  background-size: cover;
+}
+
+.bg-card-3 {
+  background-image: url(../../img/card-bg-3.webp);
+  background-size: cover;
+}
 
 .menu {
   z-index: 100;
@@ -126,7 +140,7 @@ body {
 @media (max-width: 500px) {
   
 #hero {
-  background-image: url(../../img/hero-bg-mob.jpg);
+  background-image: url(../../img/hero-bg-mob.webp);
   background-size: cover;
   background-position: center center;  
 }
@@ -141,4 +155,13 @@ body {
   padding: 34px 24px 15px 10px;
 }
 
+.grain {
+  background-size: 120%;
 }
+}
+
+.prices-li:before {
+  content:url('../../img/check-icon.svg');
+  padding-top: 6px;
+}
+
