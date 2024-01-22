@@ -39,6 +39,10 @@
     @apply w-full lg:w-1/2 self-stretch border-2 border-dark-800 bg-dark-950 p-8 flex flex-col justify-center items-center gap-2.5 rounded-lg;
 }
 
+.card-cta {
+    @apply w-full self-stretch border-2 border-dark-800 bg-dark-950 p-8 flex flex-col justify-center items-center gap-2 rounded-lg;
+}
+
 .card-row {
     @apply w-full flex flex-col-reverse w-full md:w-2/3 lg:w-1/2 md:flex-row border-2 border-dark-800 bg-dark-950 px-8 pb-8 pt-6  justify-between items-start lg:items-center gap-5 lg:gap-24 rounded-lg;
 }
@@ -84,7 +88,7 @@
 }
 
 .faq-label {
-    @apply block text-dark-100 font-bold border-b-2 border-dark-900 p-4 cursor-pointer;
+    @apply block text-dark-100 font-bold border-b-2 border-dark-900 p-4 cursor-pointer pe-12;
 }
 
 .faq-content {
