@@ -11,6 +11,14 @@
     @apply px-6 py-3 bg-dark-950 hover:bg-dark-900 text-primary border-2 border-primary ease-in duration-100 rounded-sm font-bold;
 }
 
+.btn-price-green {
+    @apply px-6 py-3 bg-dark-950 hover:bg-dark-900 text-primary border-2 border-primary ease-in duration-100 rounded-sm font-bold text-center z-40;
+}
+
+.btn-price {
+    @apply px-6 py-3 hover:bg-dark-900 border-2 border-transparent hover:border-dark-50 text-dark-50 font-bold text-center ease-in duration-100 z-40;
+}
+
 .titular {
     @apply text-center font-bold text-4xl lg:text-6xl;
 }
@@ -19,12 +27,20 @@
     @apply border-2 border-dark-800 bg-dark-950 p-8  flex-col justify-start items-start gap-2.5 flex rounded-lg;
 }
 
+.card-important {
+    @apply border-2 border-primary bg-dark-950 p-8  flex-col justify-start items-start gap-2.5 flex rounded-lg;
+}
+
 .card-center {
-    @apply w-full lg:w-1/2 self-stretch border-2 border-dark-800 bg-dark-950 p-8  flex-col justify-start items-start gap-2.5 flex rounded-lg;
+    @apply w-full lg:w-1/2 self-stretch border-2 border-dark-800 bg-dark-950 p-8 flex flex-col justify-start items-start gap-2.5 rounded-lg;
+}
+
+.card-centered {
+    @apply w-full lg:w-1/2 self-stretch border-2 border-dark-800 bg-dark-950 p-8 flex flex-col justify-center items-center gap-2.5 rounded-lg;
 }
 
 .card-row {
-    @apply flex flex-col-reverse w-full md:w-2/3 lg:w-1/2 md:flex-row border-2 border-dark-800 bg-dark-950 px-8 pb-8 pt-6  justify-between items-start lg:items-center gap-5 lg:gap-24 rounded-lg;
+    @apply w-full flex flex-col-reverse w-full md:w-2/3 lg:w-1/2 md:flex-row border-2 border-dark-800 bg-dark-950 px-8 pb-8 pt-6  justify-between items-start lg:items-center gap-5 lg:gap-24 rounded-lg;
 }
 
 .texto-xl {
@@ -49,6 +65,10 @@
 
 .badge-sm {
     @apply text-sm text-dark-50 border-2 px-3 py-1 rounded-full border-dark-800 bg-dark-900;
+}
+
+.badge-green-sm {
+    @apply text-sm text-dark-950 font-bold px-3 py-1 rounded-full bg-main-500;
 }
 
 .prices-included {
