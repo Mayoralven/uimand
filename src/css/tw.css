@@ -649,44 +649,12 @@ video {
   inset: -0.25rem;
 }
 
-.end-1 {
-  inset-inline-end: 0.25rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.-top-10 {
-  top: -2.5rem;
-}
-
-.-top-5 {
-  top: -1.25rem;
-}
-
 .-top-4 {
   top: -1rem;
 }
 
-.left-1\/2 {
-  left: 50%;
-}
-
-.right-1\/2 {
-  right: 50%;
-}
-
-.left-52 {
-  left: 13rem;
-}
-
-.left-32 {
-  left: 8rem;
-}
-
-.left-36 {
-  left: 9rem;
+.end-1 {
+  inset-inline-end: 0.25rem;
 }
 
 .isolate {
@@ -880,12 +848,8 @@ video {
   width: 100%;
 }
 
-.max-w-\[1100px\] {
-  max-width: 1100px;
-}
-
-.max-w-\[1180px\] {
-  max-width: 1180px;
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .flex-shrink {
@@ -2020,6 +1984,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2053,6 +2021,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -2067,26 +2039,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 
 .text-left {
@@ -2953,6 +2905,25 @@ video {
   }
 }
 
+.faq-label {
+  display: block;
+  cursor: pointer;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(19 19 19 / var(--tw-border-opacity));
+  padding: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(232 232 232 / var(--tw-text-opacity));
+}
+
+.faq-content {
+  overflow: hidden;
+  padding-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(245 245 245 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3042,12 +3013,16 @@ video {
     width: 48%;
   }
 
-  .md\:max-w-\[1180px\] {
-    max-width: 1180px;
+  .md\:max-w-3xl {
+    max-width: 48rem;
   }
 
-  .md\:max-w-\[400px\] {
-    max-width: 400px;
+  .md\:max-w-6xl {
+    max-width: 72rem;
+  }
+
+  .md\:max-w-sm {
+    max-width: 24rem;
   }
 
   .md\:flex-row {
@@ -3081,10 +3056,6 @@ video {
 
   .lg\:gap-14 {
     gap: 3.5rem;
-  }
-
-  .lg\:gap-20 {
-    gap: 5rem;
   }
 
   .lg\:gap-y-16 {

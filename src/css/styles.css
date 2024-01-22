@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
   scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -124,7 +127,7 @@ body {
   background-attachment: scroll;
   margin-bottom: -20px;
   margin-right: -5px;
-  padding: 38px 10px 20px 25px;
+  padding: 45px 12px 20px 28px;
   display: inline-block;
 }
 
@@ -138,7 +141,7 @@ body {
   margin-bottom: -20px;
   margin-right: -20px;
   margin-left: -5px;
-  padding: 38px 30px 21px 16px;
+  padding: 47px 35px 21px 16px;
   display: inline-block;
 }
 
@@ -170,3 +173,23 @@ body {
   padding-top: 6px;
 }
 
+
+.title::before {
+  content:url('../../img/arrow-icon.svg');
+  position: absolute;
+  right: 20px;
+
+  transition: all 0.2s;
+}
+
+.content {
+  max-height: 0;
+  transition: max-height 0.2s;
+}
+
+.toggle:checked + .title + .content {
+  max-height: 500px;
+}
+.toggle:checked + .title::before {
+  transform: rotate(180deg) !important;
+}

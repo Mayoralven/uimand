@@ -82,3 +82,11 @@
 .cover-project {
     @apply flex rounded-lg lg:grayscale lg:hover:grayscale-0 duration-150 lg:hover:scale-105;
 }
+
+.faq-label {
+    @apply block text-dark-100 font-bold border-b-2 border-dark-900 p-4 cursor-pointer;
+}
+
+.faq-content {
+    @apply text-dark-50 overflow-hidden pb-4;
+}
