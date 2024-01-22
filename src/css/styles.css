@@ -61,6 +61,13 @@ body {
   background-size: cover;
 }
 
+.bg-card-4 {
+  background-image: url(../../img/card-bg-vertical.webp);
+  background-size: 105%;
+  background-position: bottom center;
+}
+
+
 .menu {
   z-index: 100;
   padding-bottom: 30px;
@@ -83,9 +90,6 @@ body {
   position: static;
 }
 
-
-
-
 .menu-link {
   color: #fff;
   border-radius: 10px;
@@ -96,19 +100,20 @@ body {
   text-decoration: none;
 }
 
-.menu-link:hover, .menu-link.login:hover, .menu-link.w--current {
+.menu-link:hover, .menu-link.login:hover {
   color: #fff;
   background-color: rgba(255,255,255,.06);
 }
 
 .menu-link.login {
-    border: 1px solid #00E594;    
-    color: #fff;
-    background-color: rgba(255,255,255,0);
-    border-radius: 10px;
-    margin-right: 0;
+  border: 1px solid #00E594;    
+  border-radius: 10px;
+  margin-right: 0;
 }
 
+.menu-link.w--current {
+  background-color: rgba(255,255,255,.06);
+}
 
 .text-span {
   color: #a9ffe1;

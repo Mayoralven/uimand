@@ -4,10 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="src/css/tw.css">
+  <link rel="icon" type="image/x-icon" href="img/uimand-favicon.png">
+
+  <title>Uimand - Product design on dedmand</title>
+  <!-- <link rel="stylesheet" href="src/css/tw.css">
   <link rel="stylesheet" href="src/css/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <link rel="preload" href="src/css/tw.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="src/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXHV2H8EZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WXHV2H8EZ9');
+</script>
+
 </head>
 
 <body>
@@ -16,103 +32,95 @@
       style="width: 100%; height: 100%;"></canvas></div>
   <div class="grain"></div>
 
+<!-- Header section -->
 
   <header>
-
     <section id="hero" class="w-full flex-col justify-center items-center flex h-svh ">
+
+      <!-- Navbar section -->
       <div class="navbar w-full h-24 bg-black bg-opacity-10 border-b border-white border-opacity-20 justify-between items-center flex px-6 lg:px-32">
         <img src="img/uimand-logo.svg" alt="">
-        <a href="#" class="btn-sm">Book a call</a>
+        <a href="#" target="_blank" class="btn-sm">Book a call</a>
       </div>
+      <!-- END Navbar section -->
+
+      <!-- Floating Menu -->
       <div class="menu hidden sm:block">
         <div data-aos="fade-down" data-aos-offset="100" class="menu-container">
           <div class="flex justify-between p-3">
 
-            <a href="#projects" class="menu-link">
-              <div>Projects</div>
-            </a>
-            <a href="#how-we-work" class="menu-link">
-              <div>How we work</div>
-            </a>
-            <a href="#services" class="menu-link">
-              <div>Our services</div>
-            </a>
-            <a href="#pricing" class="menu-link login">
-              <div>Pricing</div>
-            </a>
-            <a href="#Pricing" class="menu-link">
-              <div>FAQ</div>
-            </a>
+            <a href="#projects" class="menu-link">Projects</a>
+            <a href="#how-we-work" class="menu-link">How we work</a>
+            <a href="#services" class="menu-link">Our services</a>
+            <a href="#pricing" class="menu-link login">Pricing</a>
+            <a href="#Pricing" class="menu-link">FAQ</a>
           </div>
         </div>
       </div>
+      <!-- END Floating Menu -->
+
+      <!-- Hero section -->
       <div data-aos="fade-up"
-        class="grow shrink py-32 px-5 basis-0 flex-col justify-center items-center gap-10 flex z-40 pb-52">
+        class="grow shrink py-32 px-5 basis-0 flex-col justify-center items-center gap-10 flex pb-52">
         <div class=" flex-col justify-start items-center flex">
-          <div class="titular text-dark-50">
+          <h1 class="titular text-dark-50">
             <span data-aos="fade-right" class="text-span">UI</span> &
             <span data-aos="fade-left" class="text-span-2">Product</span>
             design <br> on demand
-          </div>
-          <div class="text-clay text-center pt-4 md:text-lg
+          </h1>
+          <p class="text-clay text-center pt-4 md:text-lg
             md:w-3/4">Website, web apps, and mobile application design for startups and all types of businesses. <span
               class=" text-center text-main-500 text-base font-bold ">Fixed price. Cancel anytime.</span>
-          </div>
+          </p>
         </div>
-        <a href="#" class="btn-lg">Book a call</a>
+        <a href="#" target="_blank" class="btn-lg  z-40">Book a call</a>
       </div>
-    </section>
+      <!-- END Hero section -->
 
+    </section>
   </header>
 
+  <!-- END Header section -->
 
   <main>
-
-
     
+    <!-- Brands section -->
     <section class="w-full flex justify-center">
       <div class="max-w-[1100px] flex px-5 flex-col justify-start items-center gap-10 pb-12 md:pb-32 md:-mt-36">
-          <div class=" text-primary text-center text-2xl font-bold lg:text-3xl">Brands that have trusted us</div>
+          <p class=" text-primary text-center text-2xl font-bold lg:text-3xl">Brands that have trusted us</p>
           <div class="flex self-stretch flex-wrap justify-center px-6 gap-y-10">
-            <img src="img/brands/orange-logo.svg" alt="" class="w-36 md:w-40">
-            <img src="img/brands/bourjois-logo.svg" alt="" class="w-36 md:w-40">
-            <img src="img/brands/electrolux-logo.svg" alt="" class="w-36 md:w-40">
-            <img src="img/brands/schweppes-logo.svg" alt="" class="w-36 md:w-40">
-            <img src="img/brands/waylet-logo.svg" alt="" class="w-36 md:w-40">
-            <img src="img/brands/mahou-logo.svg" alt="" class="w-36 md:w-40">
+            <img src="img/brands/orange-logo.svg" alt="orange logo" class="w-36 md:w-40">
+            <img src="img/brands/bourjois-logo.svg" alt="bourjois logo" class="w-36 md:w-40">
+            <img src="img/brands/electrolux-logo.svg" alt="electrolux logo" class="w-36 md:w-40">
+            <img src="img/brands/schweppes-logo.svg" alt="schweppes logo" class="w-36 md:w-40">
+            <img src="img/brands/waylet-logo.svg" alt="waylet logo" class="w-36 md:w-40">
+            <img src="img/brands/mahou-logo.svg" alt="mahou logo" class="w-36 md:w-40">
           </div>      
       </div>
     </section>
+    <!-- END Brands section -->
 
-
+    <!-- Description box section -->
     <section data-aos="fade-up" class="w-full flex flex-col items-center gap-10 py-16 md:px-16">
-      <div class="max-w-[1180px] flex  px-5 flex-col lg:flex-row justify-center items-center gap-10 lg:gap-14">
+      <div class=" max-w-[1180px] flex  px-5 flex-col lg:flex-row justify-center items-center gap-10 lg:gap-14">
         <div class="card-center bg-card self-stretch">
-          <img src="img/pay-icon.svg" alt="">
+          <img src="img/pay-icon.svg" alt="usd icon">
           <div class="texto-xl-2 text-dark-50"></div>
-            <div class="texto-xl-2 text-primary">Untilimited designs with a subscription!</div>
-          <div class="text-clay">Design subscription with a fixed monthly rate, offering unlimited requests and revisions. You can pause or cancel anytime.</div>
-        </div>
-    
+            <h2 class="texto-xl-2 text-primary">Untilimited designs with a subscription!</h2>
+          <p class="text-clay">Design subscription with a fixed monthly rate, offering unlimited requests and revisions. You can pause or cancel anytime.</p>
+        </div>    
     </section>
+    <!-- END Description box section -->
 
-
-
-
-
-
+    <!-- Projects section -->
     <section id="projects" data-aos="fade-up"
       class="w-full flex flex-col items-center gap-10 py-16 md:py-32 px-4 lg:px-16">
-
-      <div class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl ">Last case studies</div>
-
-      <div
-        class="max-w-[1180px] flex flex-wrap  px-5 flex-col md:flex-row justify-between items-center gap-y-10 lg:gap-y-16 z-40">
-
-        <a href="#" class="flex flex-col gap-6 md:w-[48%]">
-          <img loading="lazy" src="img/projects/electrolux-cover.webp" alt="" class="cover-project">
+      <h2 class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl ">Last case studies</h2>
+      <div class="max-w-[1180px] flex flex-wrap  px-5 flex-col md:flex-row justify-between items-center gap-y-10 lg:gap-y-16 z-40">
+        <a href="#" target="_blank" class="flex flex-col gap-6 md:w-[48%]">
+          <img loading="lazy" src="img/projects/electrolux-cover.webp" alt="Electrolux web app design cover" class="cover-project">
           <div class="flex flex-col gap-3">
-            <div class="project-title">Electrolux web app</div>
+            <h3 class="project-title">Electrolux web app</h3>
             <div class="flex gap-2 flex-wrap">
               <span class="badge-sm">Ux/Ui</span>
               <span class="badge-sm">Figma</span>
@@ -121,11 +129,10 @@
             </div>
           </div>
         </a>
-
-        <a href="#" class="flex flex-col gap-6 md:w-[48%]">
-          <img loading="lazy" src="img/projects/mahou-cover.webp" alt="" class="cover-project">
+        <a href="#" target="_blank" class="flex flex-col gap-6 md:w-[48%]">
+          <img loading="lazy" src="img/projects/mahou-cover.webp" alt="Mahou web app design cover" class="cover-project">
           <div class="flex flex-col gap-3">
-            <div class="project-title">Mahou card activation app</div>
+            <h3 class="project-title">Mahou card activation app</h3>
             <div class="flex gap-2 flex-wrap">
               <span class="badge-sm">Ux/Ui</span>
               <span class="badge-sm">Figma</span>
@@ -135,10 +142,10 @@
           </div>
 
         </a>
-        <a href="#" class="flex flex-col gap-6 md:w-[48%]">
-          <img loading="lazy" src="img/projects/bour-cover.webp" alt="" class="cover-project">
+        <a href="#" target="_blank" class="flex flex-col gap-6 md:w-[48%]">
+          <img loading="lazy" src="img/projects/bour-cover.webp" alt="Bourjois web app design cover" class="cover-project">
           <div class="flex flex-col gap-3">
-            <div class="project-title">Bourjois gift platform</div>
+            <h3 class="project-title">Bourjois gift platform</h3>
             <div class="flex gap-2 flex-wrap">
               <span class="badge-sm">Ux/Ui</span>
               <span class="badge-sm">Figma</span>
@@ -147,12 +154,10 @@
           </div>
         </a>
 
-        <a href="#" class="flex flex-col gap-6 md:w-[48%]">
-          <img loading="lazy" src="img/projects/check-cover.webp" alt="" class="cover-project">
-
+        <a href="#" target="_blank" class="flex flex-col gap-6 md:w-[48%]">
+          <img loading="lazy" src="img/projects/check-cover.webp" alt="Hotel check in app design cover" class="cover-project">
           <div class="flex flex-col gap-3">
-
-            <div class="project-title">Hotel check-in web app</div>
+            <h3 class="project-title">Hotel check-in web app</h3>
             <div class="flex gap-2 flex-wrap">
               <span class="badge-sm">Ux/Ui</span>
               <span class="badge-sm">Figma</span>
@@ -163,209 +168,173 @@
       </div>
 
     </section>
+    <!-- END Projects section -->
 
-
-
-
-
-
-
-
-    <section data-aos="fade-up" class="w-full flex justify-center">
-      <div
-        class="max-w-[800px] flex px-5 flex-col md:flex-row justify-start items-center gap-10 py-16 md:py-32 lg:gap-32 md:px-16">
-
-        <div class="grow shrink basis-0 flex-col justify-center items-center gap-4 flex">
-
-          <div class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl">What are people saying about
-            us?</div>
-
-          <div class="texto-xl text-center">"Excellent work in UX/UI design, he understood my needs perfectly and was
+    <!-- Testimonial section -->
+    <section data-aos="fade-up" class="w-full flex flex-col items-center gap-10 py-16 md:px-16">
+      <h2 class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl">What are people saying about
+        us?</h2>
+      <div class="max-w-[1180px] flex  px-5 flex-col lg:flex-row justify-center items-center gap-10 lg:gap-14">
+        <div class="card-centered bg-card self-stretch">       
+          <div class="texto-xl-2 text-dark-50"></div>           
+          <p class="text-clay text-center">"Excellent work in UX/UI design, he understood my needs perfectly and was
             always willing to make the modifications I requested. Highly recommended for any web or product design
-            project."</div>
-
+            project."</p>
           <img src="img/testiminal.png" alt="" class="pt-3">
-
-          <div>
-            <div class="text-slate-50 text-center text-base font-bold">Heydi Rossell</div>
-            <div class="text-dark-400 text-center text-base font-bold">CEO, Cube Store</div>
-          </div>
-
-        </div>
-
-      </div>
+          <div class="flex flex-col">
+            <span class="text-slate-50 text-center text-base font-bold">Heydi Rossell</span>
+            <span class="text-dark-400 text-center text-base font-bold">CEO, Cube Store</span>
+        </div>    
     </section>
+    <!-- END Testimonial section -->
 
-
-
-
-
+    <!-- How we work section -->
     <section id="how-we-work" data-aos="fade-up"
       class="w-full flex flex-col items-center gap-10 py-16 md:py-32 md:px-16">
-      <div class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl ">How we work</div>
+      <h2 class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl ">How we work</h2>
       <div class="max-w-[1180px] flex  px-5 flex-col lg:flex-row justify-start items-center gap-10 lg:gap-14">
         <div class="card self-stretch">
-          <img src="img/design-icon.svg" alt="">
-          <div class="texto-xl-2 text-primary">Untilimited designs with a subscription!</div>
-          <div class="text-clay">Unleash a wave of creative opportunities as you subscribe to our design hub. Dive into
-            a diverse range of ideas and projects that await your imaginative touch.</div>
+          <img src="img/design-icon.svg" alt="design icon">
+          <h3 class="texto-xl-2 text-primary">Untilimited designs with a subscription!</h3>
+          <p class="text-clay">Unleash a wave of creative opportunities as you subscribe to our design hub. Dive into
+            a diverse range of ideas and projects that await your imaginative touch.</p>
         </div>
         <div class="card">
-          <img src="img/edit-icon.svg" alt="">
-          <div class="texto-xl-2 text-primary">Limitless revisions and clear communication</div>
-          <div class="self-stretch text-gray-200 text-base">Unlimited revisions for your ideas, paired with the best
-            communication. Dive into experimentation without any worries, as your vision takes center stage.</div>
+          <img src="img/edit-icon.svg" alt="edit icon">
+          <h3 class="texto-xl-2 text-primary">Limitless revisions and clear communication</h3>
+          <p class="self-stretch text-gray-200 text-base">Unlimited revisions for your ideas, paired with the best
+            communication. Dive into experimentation without any worries, as your vision takes center stage.</p>
         </div>
         <div class="card self-stretch">
-          <img src="img/time-icon.svg" alt="">
-          <div class="texto-xl-2 text-primary">Your designs completed in 2-3 business days!</div>
-          <div class="self-stretch text-gray-200 text-base">Embark on a journey of design delight with our quick and
+          <img src="img/time-icon.svg" alt="time icon">
+          <h3 class="texto-xl-2 text-primary">Your designs completed in 2-3 business days!</h3>
+          <p class="self-stretch text-gray-200 text-base">Embark on a journey of design delight with our quick and
             efficient delivery. Unwrap your first task within a snappy 48-72 hours, and let the excitement of creativity
-            unfold!</div>
+            unfold!</p>
         </div>
       </div>
     </section>
+    <!-- END How we work section -->
 
-
-
+    <!-- Services section -->
     <section id="services" data-aos="fade-up"
     class="w-full flex flex-col items-center gap-10 py-16 md:py-32 px-4 lg:px-16">
-    <div class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl ">Wide range of habilities</div>
-    <div class="max-w-[1180px] flex flex-wrap  px-5 flex-col md:flex-row justify-center items-center gap-6">
+    <h2 class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl ">Wide range of habilities</h2>
+    <div class="w-full md:max-w-[1180px] flex flex-wrap flex-col md:flex-row justify-center items-center gap-6">
       <div class="card-row bg-card-2 self-stretch">
         <div class="flex-col">
-          <div class="texto-xl-2 text-primary">Product design</div>
-          <div class="text-clay pt-3">
+          <h3 class="texto-xl-2 text-primary">Product design</h3>
+          <p class="text-clay pt-3">
             • App design<br>
             • Web app design<br>
             • Desktop design<br>
             • Design system development<br>
             • High fidelity prototype
-          </div>
+          </p>
         </div>
-        <img src="img/figma-icon.svg" alt="" class="w-14 md:w-20">
+        <img src="img/figma-icon.svg" alt="figma icon" class="w-14 md:w-20">
       </div>
       <div class="card-row bg-card-3 self-stretch">
         <div class="flex-col">
-          <div class="texto-xl-2 text-primary">Web Design</div>
-          <div class="text-clay pt-3">
+          <h3 class="texto-xl-2 text-primary">Web Design</h3>
+          <p class="text-clay pt-3">
             • Landing Page Design<br>
             • Website Design<br>
             • HTML & CSS Design<br>
             • Bootstrap & Tailwind<br>
             • Wordpress & Elementor design<br>
-            • Web page optimization<br></div>
+            • Web page optimization<br></p>
         </div>
-        <img src="img/web-icon.svg" alt="" class="w-14 md:w-20">
+        <img src="img/web-icon.svg" alt="web design icon" class="w-14 md:w-20">
       </div>
       <div class="card-row bg-card-2 self-stretch">
         <div class="flex-col">
-          <div class="texto-xl-2 text-primary">Organic grow</div>
-          <div class="text-clay pt-3">
+          <h3 class="texto-xl-2 text-primary">Organic grow</h3>
+          <p class="text-clay pt-3">
             • SEO<br>
             • Analytics<br>
-            • On page optimization</div>
+            • On page optimization</p>
         </div>
-        <img src="img/analytics-icon.svg" alt="" class="w-14 md:w-20">
+        <img src="img/analytics-icon.svg" alt="analytics icon" class="w-14 md:w-20">
       </div>
     </div>
   </section>
+  <!-- End Services section -->
 
 
-
-
-
-
-
+  <!-- Pricing section -->
     <section id="pricing" data-aos="fade-up" class="w-full flex flex-col items-center gap-10 py-16 md:py-32">
+      <h2 class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl">Pricing plans</h2>
+      <div class="self-stretch flex  px-5 lg:px-0 flex-col lg:flex-row justify-center items-center gap-8">
 
-      <div class="self-stretch text-primary text-center text-2xl font-bold lg:text-3xl">Pplans</div>
-
-      <div class="self-stretch flex  px-5 lg:px-0 flex-col lg:flex-row justify-center items-center gap-10 lg:gap-14">
-
-
-        <div class="card w-full md:max-w-[400px]">
-          <div class="texto-xxl text-primary">Premium plan</div>
+        <!-- Green price card -->
+        <div class="card-important bg-card-4 w-full md:max-w-[400px] relative">
+          <span class="badge-green-sm absolute -top-4">Recomended</span>
+          <h3 class="texto-xxl text-primary ">Premium plan</h3>
           <div class="texto-xxl text-dark-50 border-b border-dark-800 pb-4">$1.999<span class="text-lg ">/mo</span>
           </div>
           <div class="prices-included">
-            <div class="texto-xl pb-2">Whats included</div>
+            <span class="texto-xl pb-2">Whats included</span>
             <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+              <span class="text-clay">Unlimited Design Requests</span>
             </div>
             <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+              <span class="text-clay">Unlimited revisions</span>
             </div>
             <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+              <span class="text-clay">1 Active Request</span>
             </div>
             <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+              <span class="text-primary font-bold">Free 3 days trial</span>
             </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
-            </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
-            </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
-            </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
-            </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+                       
+            <div class="flex flex-col gap-4 self-stretch pt-4">
+              <p class="text-sm text-dark-50 pb-3"><span class="font-bold">Refund policy:</span> If you are not happy with the results, we will refund 50% of the money for the remaining subscription time of the month.</p> 
+              <a href="https://buy.stripe.com/fZe3fn9eC3TfglG289" target="_blank" class="btn-price-green">Get started</a>
+              <a href="#" target="_blank" class="btn-price">Book a call</a>
             </div>
           </div>
         </div>
+        <!-- END Green price card -->
 
-
-        <div class="card w-full md:max-w-[400px]">
-          <div class="texto-xxl text-primary">Premium plan</div>
-          <div class="texto-xxl text-dark-50 border-b border-dark-800 pb-4">$1.999<span class="text-lg ">/mo</span>
+        <!-- Regular price card -->
+        <div class="card bg-card-4 w-full md:max-w-[400px] self-stretch">
+          <h3 class="texto-xxl text-dark-50">Platinum plan</h3>
+          <div class="texto-xxl text-dark-50 border-b border-dark-800 pb-4">$2.999<span class="text-lg ">/mo</span>
           </div>
-          <div class="prices-included">
-            <div class="texto-xl pb-2">Whats included</div>
+          <div class="prices-included self-stretch">
+            <span class="texto-xl pb-2">Whats included</span>
             <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+              <span class="text-clay">Unlimited Design Requests</span>
             </div>
             <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+              <span class="text-clay">Unlimited revisions</span>
             </div>
             <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+              <span class="text-clay">2 Active Request</span>
             </div>
             <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+              <span class="text-clay">High fidelity prototype</span>
             </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
-            </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
-            </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
-            </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
-            </div>
-            <div class="prices-li">
-              <div class="text-clay">Unlimited Design Requests</div>
+            
+            <div class="flex flex-col gap-4 justify-end  self-stretch pt-4">
+              <p class="text-sm text-dark-50 pb-3"><span class="font-bold">Refund policy:</span> If you are not happy with the results, we will refund 50% of the money for the remaining subscription time of the month.</p>
+              <a href="https://buy.stripe.com/14kbLT9eCblHfhC7su" target="_blank" class="btn-price-green">Get started</a>
+              <a href="#" target="_blank" class="btn-price">Book a call</a>
             </div>
           </div>
         </div>
+        <!-- END Regular price card -->
+      </div>      
+        <p class="texto-xl-2 text-dark-50 self-stretch text-center">No Long-Term Commitments, cancel anytime.</p>
 
-
-      </div>
-
-      <div class="max-w-[1180px] flex  px-5 flex-col lg:flex-row justify-start items-center gap-10 lg:gap-20">
-        <div class="texto-xl-2 text-primary">No Long-Term Commitments, cancel anytime.</div>
-      </div>
 
 
     </section>
+    <!-- END Pricing section -->
+
+
+    
 
 
 
@@ -373,9 +342,9 @@
 
   </main>
 
-
+  <script src="src/js/app.js" defer></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="src/js/particles.js"></script>
+  <script src="src/js/particles.js" defer></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -384,6 +353,9 @@
       delay: 150,
     });
   </script>
+    <noscript><link rel="stylesheet" href="src/css/tw.css"></noscript>
+    <noscript><link rel="stylesheet" href="src/css/styles.css"></noscript>
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
 
 </body>
 
