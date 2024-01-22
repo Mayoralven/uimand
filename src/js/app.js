@@ -33,3 +33,36 @@ window.addEventListener('scroll', updateMenuLinks);
 
 // Llamar a la función de actualización al cargar la página
 window.addEventListener('load', updateMenuLinks);
+
+
+
+// Get the menu element
+const menu = document.querySelector('.menu');
+
+// Get the footer element
+const footer = document.querySelector('footer');
+
+// Calculate the distance between the top of the menu and the bottom of the page
+const menuOffset = menu.offsetTop + menu.offsetHeight;
+const footerOffset = footer.offsetTop;
+
+// Add an event listener to the window for scroll events
+window.addEventListener('scroll', function() {
+  // Calculate the current scroll position
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  // Check if the scroll position is within the range of the menu and the footer
+  if (scrollPosition >= menuOffset && scrollPosition <= footerOffset) {
+    // Hide the menu with a fade out and move down effect
+    menu.style.opacity = '1';
+    menu.style.transform = 'translateY(0)';
+    menu.style.transition = 'transform 0.3s';
+    menu.style.visibility = 'visible';
+  } else {
+    // Show the menu
+    menu.style.opacity = '0';    
+    menu.style.transform = 'translateY(20px)';
+    menu.style.transition = 'transform 0.3s';
+    menu.style.visibility = 'hidden';
+  }
+});
