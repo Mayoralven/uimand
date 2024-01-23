@@ -66,3 +66,10 @@ window.addEventListener('scroll', function() {
     menu.style.visibility = 'hidden';
   }
 });
+
+
+AOS.init({
+  easing: 'ease-in-out',
+  duration: 800,
+  delay: 150,
+});
