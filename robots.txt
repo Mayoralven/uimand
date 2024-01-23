@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /private/
+Sitemap: https://uimand.top/sitemap.xml
