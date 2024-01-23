@@ -1,0 +1,34 @@
+RewriteEngine On
+
+# Redirigir todas las solicitudes a minúsculas
+RewriteMap lc int:tolower
+RewriteCond %{REQUEST_URI} [A-Z]
+RewriteRule (.*) ${lc:$1} [R=301,L]
+
+# Redirigir urls sin .html o .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Redirigir HTTP a HTTPS sin "www"
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://mayoralven.com/$1 [L,R=301]
+
+# Redirigir cualquier solicitud de "http" a "https"
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://mayoralven.com/$1 [L,R=301]
+
+
+
+<IfModule mod_headers.c>
+    # Establecer encabezados de caché para recursos estáticos
+    <FilesMatch "\.(html|css|js|jpg|webp|jpeg|png|gif|ico|svg)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+</IfModule>
+
