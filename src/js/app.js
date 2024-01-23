@@ -69,7 +69,7 @@ window.addEventListener('scroll', function() {
 
 
 
-  // JavaScript to show and hide the popup on every 5 visits or reloads
+  // JavaScript to show and hide the popup on every 5 visits or the first visit
   document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById("popup");
     const closePopupButton = document.getElementById("closePopup");
@@ -83,8 +83,8 @@ window.addEventListener('scroll', function() {
     // Update the visit count in localStorage
     localStorage.setItem("visitCount", visitCount);
 
-    // Show the popup on every 5 visits
-    if (visitCount % 5 === 0) {
+    // Show the popup on the first visit and every 5 visits
+    if (visitCount === 1 || visitCount % 5 === 0) {
       popup.classList.remove("hidden");
       // Add class to body to block scroll
       document.body.style.overflow = "hidden";
