@@ -649,12 +649,20 @@ video {
   inset: -0.25rem;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .-top-4 {
   top: -1rem;
 }
 
 .end-1 {
   inset-inline-end: 0.25rem;
+}
+
+.right-8 {
+  right: 2rem;
 }
 
 .isolate {
@@ -667,6 +675,10 @@ video {
 
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-start {
@@ -841,12 +853,20 @@ video {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
 
 .h-screen {
   height: 100vh;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-14 {
@@ -1948,6 +1968,10 @@ video {
   --tw-bg-opacity: 0.1;
 }
 
+.bg-opacity-85 {
+  --tw-bg-opacity: 0.85;
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2363,6 +2387,11 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-ht-100 {
+  --tw-text-opacity: 1;
+  color: rgb(44 102 252 / var(--tw-text-opacity));
+}
+
 .text-main-200 {
   --tw-text-opacity: 1;
   color: rgb(174 255 227 / var(--tw-text-opacity));
@@ -2688,6 +2717,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-100 {
+  transition-duration: 100ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2757,6 +2790,29 @@ video {
 .btn-elux:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(3 97 207 / var(--tw-bg-opacity));
+}
+
+.btn-ht {
+  border-radius: 0.125rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(7 7 7 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 102 252 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(7 7 7 / var(--tw-text-opacity));
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.btn-ht:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 71 240 / var(--tw-bg-opacity));
 }
 
 .btn-mh {
@@ -2940,6 +2996,29 @@ video {
   }
 }
 
+.card-popup {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(61 61 61 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 7 7 / var(--tw-bg-opacity));
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .card-popup {
+    width: 400px;
+  }
+}
+
 .card-centered {
   display: flex;
   width: 100%;
@@ -3096,6 +3175,21 @@ video {
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(245 245 245 / var(--tw-text-opacity));
+}
+
+.badge-green {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 229 148 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(7 7 7 / var(--tw-text-opacity));
 }
 
 .badge-green-sm {
@@ -3275,6 +3369,36 @@ video {
   }
 }
 
+.hover\:translate-x-2:hover {
+  --tw-translate-x: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-main-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 253 178 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-main-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 192 119 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-main-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 150 97 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-main-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(112 255 206 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-dark-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3297,6 +3421,11 @@ video {
 .hover\:before\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .focus\:hover\:text-center:hover:focus {

@@ -68,8 +68,32 @@ window.addEventListener('scroll', function() {
 });
 
 
-AOS.init({
-  easing: 'ease-in-out',
-  duration: 800,
-  delay: 150,
-});
+
+  // JavaScript to show and hide the popup on every 5 visits or reloads
+  document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    const closePopupButton = document.getElementById("closePopup");
+
+    // Get the visit count from localStorage, default to 0 if not present
+    let visitCount = parseInt(localStorage.getItem("visitCount")) || 0;
+
+    // Increment the visit count on every page load
+    visitCount++;
+
+    // Update the visit count in localStorage
+    localStorage.setItem("visitCount", visitCount);
+
+    // Show the popup on every 5 visits
+    if (visitCount % 5 === 0) {
+      popup.classList.remove("hidden");
+      // Add class to body to block scroll
+      document.body.style.overflow = "hidden";
+    }
+
+    // Close the popup when the close button is clicked
+    closePopupButton.addEventListener("click", function () {
+      popup.classList.add("hidden");
+      // Remove class from body to enable scroll
+      document.body.style.overflow = "auto";
+    });
+  });

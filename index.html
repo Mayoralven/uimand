@@ -54,6 +54,37 @@
 
 <body>
 
+  <div id="popup" class="fixed inset-0 flex items-center justify-center bg-dark-950 bg-opacity-85 z-50 hidden">
+    <div class="w-full px-4">
+     
+      <!-- Your popup content goes here -->
+      <div class="card-popup bg-card self-stretch mx-auto relative">
+
+        <button id="closePopup" class="text-primary hover:text-white-50 focus:outline-none absolute right-8">
+          <svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        <img src="img/discouint-icon.svg" alt="discount icon">
+        <div class="texto-xl-2 text-dark-50"></div>
+        <h2 class="texto-xl-2 text-primary">10% Off First Month with UImand!</h2>
+        <p class="text-clay">On your first month, elevate your design journey with a 10% discount.</p>
+        <div class="w-100 flex items-center gap-4 pt-4 ">
+        <p class="text-clay">With the code:</p>
+        <span class="badge-green">UIMAND10</span>        
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
   <div id="particles-js" class="particles"><canvas class="particles-js-canvas-el" width="1182" height="937"
       style="width: 100%; height: 100%;"></canvas></div>
   <div class="grain"></div>
@@ -652,6 +683,15 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
   <script src="src/js/particles.js" defer></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+
+  <script>
+    AOS.init({
+  easing: 'ease-in-out',
+  duration: 800,
+  delay: 150,
+});
+  </script>
   <!-- <noscript>
     <link rel="stylesheet" href="src/css/tw.css">
   </noscript>
